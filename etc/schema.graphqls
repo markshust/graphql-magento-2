@@ -1,3 +1,7 @@
 interface ProductInterface {
     is_oversized: Boolean @doc(description: "Determines if the product is oversized.")
 }
+
+type Blog {
+    title: String @doc(description: "The title for our blog.")
+}
