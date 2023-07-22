@@ -1,0 +1,3 @@
+interface ProductInterface {
+    is_oversized: Boolean @doc(description: "Determines if the product is oversized.")
+}
