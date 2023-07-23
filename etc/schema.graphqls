@@ -1,5 +1,5 @@
 interface ProductInterface {
-    is_oversized: Boolean @doc(description: "Determines if the product is oversized.")
+    is_oversized: Boolean @resolver(class: "Macademy\\GraphQl\\Model\\Resolver\\IsOversizedResolver") @doc(description: "Determines if the product is oversized.")
 }
 
 type Blog {
