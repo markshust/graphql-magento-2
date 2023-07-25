@@ -5,3 +5,7 @@ interface ProductInterface {
 type Blog {
     title: String @doc(description: "The title for our blog.")
 }
+
+type Query {
+    blog: Blog @resolver(class: "Macademy\\GraphQl\\Model\\Resolver\\BlogResolver") @doc(description: "Return a list of blogs.")
+}
