@@ -19,6 +19,9 @@ class BlogResolver implements ResolverInterface
     {
         return [
             'title' => 'My Awesome Blog',
+            'store' => $context->getExtensionAttributes()->getStore()->getName(),
+            'current_customer_id' => $context->getUserId(),
+            'user_type' => $context->getUserType(),
         ];
     }
 }

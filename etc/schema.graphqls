@@ -4,6 +4,9 @@ interface ProductInterface {
 
 type Blog {
     title: String @doc(description: "The title for our blog.")
+    store: String @doc(description: "The store for our blog.")
+    current_customer_id: String @doc(description: "The current customer id.")
+    user_type: String @doc(description: "The current customer user type.")
 }
 
 type Query {
